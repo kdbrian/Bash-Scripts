@@ -1,5 +1,4 @@
-#include<stdio.h>
-#include<unistd.h>
+#include "headers.h"
 
 int main(){
 
