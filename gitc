@@ -31,7 +31,7 @@ if [[ -d .git ]]; then
 	fi
 
 	#check if the first parameter is actually a file and not a directory
-	if [[ -f $1 ]]; then
+	if [[ -f $1 ]] || [[ -d $1 ]]; then
 
 		#  stage and commit the file
 		echo "Staging and commiting $1......"
@@ -39,7 +39,7 @@ if [[ -d .git ]]; then
 		git add $1 && git commit -m "$2"
 	else
 		echo "Error: the parameter provided is not a file"
-		echo "Usage: $0 <filename> <commit message>"
+		echo "Usage: $0 <filename or directory> <commit message>"
 	fi
 
 else
