@@ -18,7 +18,7 @@
 # -ne for not equal to					!=
 # -gt for greater than
 # -lt  '  less than
-# -geq '  greater than or equal to
+# -ge '  greater than or equal to
 # -leq '  less than or equal to
 
 
