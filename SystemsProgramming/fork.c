@@ -1,7 +1,4 @@
-#include<stdio.h>
-#include<unistd.h>
-#include<sys/types.h>
-
+#include "headers.h"
 // emulation of creating a child process  using the fork command
 
 size_t pid;
