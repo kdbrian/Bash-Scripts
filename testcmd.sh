@@ -19,7 +19,7 @@
 # -gt for greater than
 # -lt  '  less than
 # -ge '  greater than or equal to
-# -leq '  less than or equal to
+# -le '  less than or equal to
 
 
 # -z to check if a string is empty
