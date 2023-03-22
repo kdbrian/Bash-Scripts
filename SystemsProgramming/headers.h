@@ -16,6 +16,15 @@ bool checkPid(size_t pid){
 	return pid < 0 ? false : true ;
 }
 
+/***
+	Method to check the file descriptor
+	this is achieved by checking the value of the pid
+	fd > 0 always
+	if fd < 0 the file operation (open .. ) wasn't successful
+*/
+bool checkFd(size_t fd){
+	return fd < 0 ? false : true ;
+}
 
 /***
     flushes the char array by initializing each index to the terminating character '\0
