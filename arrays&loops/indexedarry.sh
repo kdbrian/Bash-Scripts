@@ -21,4 +21,37 @@ echo ${nums[1]}
 echo ${nums[@]}
 
 # parameter expansion tricks are applicable to arrays
+
 echo ${nums[@]:1}; #outputs elements from index one to the end
+
+echo ${nums[@]:1:2}; #outputs elements from index one to a length of 2
+
+# echo ${nums[@]:: -1}; #outputs elements from index one to a length of 2
+
+# to insert an element to an existing array use the following syntax
+# array_name+=(value)
+nums+=(6)
+
+echo ${nums[@]}
+
+# to delete an element from an array use the syntax
+# unset array_name[index_of_element]
+
+unset nums[0]; # removes the element at the index 0
+
+echo "Elements : ${nums[@]}"
+
+# after deletion the index as well as the element no longer exists in the array
+
+echo "Indices : ${!nums[@]}"; # using this to echo the available indices of the array we will not have the index 0
+
+
+# to change an element inside an array use the following syntax
+# array_name[index]=new_value
+# the line below inserts the element "brain" at index 0
+nums[0]="brain"
+
+echo ${nums[@]}
+
+
+exit 0;
