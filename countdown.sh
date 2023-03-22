@@ -10,6 +10,7 @@
 
 # countdown to till the time is up
 # getting the input variables from the cmd options
+
 while getopts "m:s:" opt; do
 	#echo "$opt $OPTARG"
 	case "$opt" in
@@ -19,8 +20,8 @@ while getopts "m:s:" opt; do
 	esac
 done
 
-#we have the minutes and seconds
-#nest the seconds inside the minutes
+# we have the minutes and seconds
+# nest the seconds inside the minutes
 # while mins
 
 echo "Timer started for $min minutes, $sec seconds"
