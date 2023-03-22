@@ -5,7 +5,7 @@
 #include<sys/types.h>
 #include<stdbool.h>
 #include<stdlib.h>
-
+#include<string.h>
 /***
 	Method to check whether a fork function ran successfuly
 	this is achieved by checking the value of the pid
