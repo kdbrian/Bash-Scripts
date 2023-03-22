@@ -29,14 +29,6 @@ void readFile(char * data){
     printf("Read : [%s]\n", data);
 }
 
-/***
-    flushes the char array by initializing each index to the terminating character '\0
-*/
-void flushArray(char * arry){
-
-    for (size_t i=0; i< sizeof(arry); i++)
-        arry[i]='\0';
-}
 
 int main(){
 
