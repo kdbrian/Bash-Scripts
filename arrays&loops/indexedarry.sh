@@ -6,8 +6,8 @@
 
 # the elements can be of any type ints and strings
 
-# indexing start at o
-# 1=>0 2=>1 3=>4 ....
+# indexing start at 0
+# 1=>0 2=>1 3=>2 ....
 
 nums=(1 2 3 4 5)
 
