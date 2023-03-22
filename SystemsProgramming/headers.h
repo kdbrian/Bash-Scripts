@@ -15,3 +15,13 @@
 bool checkPid(size_t pid){
 	return pid < 0 ? false : true ;
 }
+
+
+/***
+    flushes the char array by initializing each index to the terminating character '\0
+*/
+void flushArray(char * arry){
+
+    for (size_t i=0; i< sizeof(arry); i++)
+        arry[i]='\0';
+}
