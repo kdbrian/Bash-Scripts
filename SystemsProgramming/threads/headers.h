@@ -1,6 +1,7 @@
 /**
  * 
  * All the header files related to threads
+ * All the files that include this header should be compiled with the -lpthread option
  * 
 */
 
@@ -10,3 +11,4 @@
 #include<unistd.h>
 #include<sys/types.h>
 #include<pthread.h>
+#include<stdlib.h>
