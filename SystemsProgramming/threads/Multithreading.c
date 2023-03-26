@@ -26,10 +26,12 @@ int main(){
 
 //function associated with the first thread
 void * fun1(){
+    //some job n to be handled by this thread could be kept here
     printf("Thread 1 executing\n");
 }
 
 //function associated with the second thread
 void * fun2(){
+    //some job n to be handled by this thread could be kept here
     printf("Thread 2 executing\n");
 }
