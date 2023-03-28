@@ -27,9 +27,6 @@ pthread_t threadB;
 void * fun1();
 void * fun2();
 
-void exitCode(){
-    exit(1);
-}
 int main(){
 
     printf("Value before threads update %d\n", shared_variable);
